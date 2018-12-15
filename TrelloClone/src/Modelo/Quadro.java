@@ -1,7 +1,10 @@
 package Modelo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Quadro {
-	
+		
 	private String titulo;
 	private String cor;
 	private boolean particular;
@@ -11,6 +14,8 @@ public class Quadro {
 		this.cor = cor;
 		this.particular = true;
 	}
+	
+	List<Lista> Lista = new ArrayList<>();
 	
 	public void setTitulo(String novoTitulo) {
 		this.titulo = novoTitulo;
@@ -28,6 +33,11 @@ public class Quadro {
 		if(num == 1) {
 			this.particular = false;
 		}return particular;
+	}
+	
+	public void adicionarLista(String titulo) {
+		Lista listas = new Lista(titulo);
+		this.Lista.add(listas);
 	}
 	
 
