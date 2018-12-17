@@ -3,23 +3,16 @@ package Modelo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lista extends Cartao {
+public class Lista {
 	
-	private static final String Lista = null;
-
-
-	public Lista(String titulo) {
-		super(titulo);
-		
-	}
-
+	
 	private String nome;
 	List<Cartao> cartoes = new ArrayList<>();
 	
-		
-	//public Lista(String nome){
-		//this.nome = nome;
-	//}
+	
+	public Lista(String nome){
+		this.nome = nome;
+	}
 	
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -39,10 +32,5 @@ public class Lista extends Cartao {
 		cartoes.remove(cartao);
 	}
 	
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return "Lista: " + Lista + "|" + "Cartoes " + cartoes  ;
-	}
 
 }

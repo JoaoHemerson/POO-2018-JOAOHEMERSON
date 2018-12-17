@@ -1,21 +1,25 @@
 package Modelo;
 
 import java.util.ArrayList;
+import Modelo.Lista;
 import java.util.List;
 
 public class Quadro {
 		
 	private String titulo;
 	private String cor;
-	private boolean particular;
+	private List<Quadro> quadros = new ArrayList<>(); 
 	
-	public Quadro(String novoTitulo, String cor) {
-		this.titulo = novoTitulo;
-		this.cor = cor;
-		this.particular = true;
+	
+	public void criarLista(String lista) {
+		new Lista(lista);
 	}
 	
-	List<Lista> Lista = new ArrayList<>();
+	
+	
+	public Quadro(String novoTitulo) {
+		this.titulo = novoTitulo;
+	}
 	
 	public void setTitulo(String novoTitulo) {
 		this.titulo = novoTitulo;
@@ -29,15 +33,10 @@ public class Quadro {
 	public String getCor() {
 		return this.cor;
 	}
-	public boolean mudarTipo(int num ) {
-		if(num == 1) {
-			this.particular = false;
-		}return particular;
-	}
 	
-	public void adicionarLista(String titulo) {
-		Lista listas = new Lista(titulo);
-		this.Lista.add(listas);
+		
+	public List<Quadro> getQuadros(){
+		return this.quadros;
 	}
 	
 

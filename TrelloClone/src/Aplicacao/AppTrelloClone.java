@@ -1,9 +1,19 @@
 package Aplicacao;
 
-public class AppTrelloClone {
+import Modelo.*;
+import Servicos.*;
+
+public class AppTrelloClone{
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+			
+		AppTrelloClone app = new AppTrelloClone();
+			
+			
+			
+			
+			
 
 	}
 
