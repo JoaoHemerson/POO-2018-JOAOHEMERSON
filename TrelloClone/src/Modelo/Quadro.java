@@ -1,24 +1,21 @@
 package Modelo;
-
-import java.util.ArrayList;
 import Modelo.Lista;
+import java.util.ArrayList;
+//import Modelo.Lista;
 import java.util.List;
 
-public class Quadro {
+public class Quadro{
 		
 	private String titulo;
 	private String cor;
-	private List<Quadro> quadros = new ArrayList<>(); 
+	List<Quadro> quadros = new ArrayList<Quadro>();
+	List<Lista> listas = new ArrayList<Lista>();
+		
+	
+	Lista novaLista = new Lista();
 	
 	
-	public void criarLista(String lista) {
-		new Lista(lista);
-	}
-	
-	
-	
-	public Quadro(String novoTitulo) {
-		this.titulo = novoTitulo;
+	public Quadro() {
 	}
 	
 	public void setTitulo(String novoTitulo) {

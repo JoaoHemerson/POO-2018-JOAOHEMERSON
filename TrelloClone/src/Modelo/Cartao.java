@@ -2,18 +2,14 @@ package Modelo;
 
 public class Cartao{
 	
-	//private String etiqueta;
+	
 	private String titulo;
-	//private String data;
 	private String descricao;
-	private String comentario;
-	//private String checkList;
 	private boolean StatusArquivado;
 	
 	public Cartao(String titulo) {
 		this.titulo = titulo;
 		this.descricao = "";
-		this.comentario = "";
 		this.StatusArquivado = false;
 	
 		
@@ -30,14 +26,9 @@ public class Cartao{
 	public String getDescricao(){
 		return this.descricao;
 	}
-	public void setComentario(String comentario) {
-		this.comentario = comentario;
-	}
-	public String getComentario() {
-		return this.comentario;
-	}
+
 	public boolean mudancaDeStatus(int num) {
-		if(num == 1) {
+		if(num == 2) {
 			this.StatusArquivado = true;
 			
 		}return this.StatusArquivado;

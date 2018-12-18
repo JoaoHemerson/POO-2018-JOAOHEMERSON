@@ -10,10 +10,10 @@ public class Lista {
 	List<Cartao> cartoes = new ArrayList<>();
 	
 	
-	public Lista(String nome){
-		this.nome = nome;
+	public Lista(){
 	}
 	
+		
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -21,6 +21,8 @@ public class Lista {
 	public String getNome() {
 		return this.nome;
 	}
+	
+	
 	
 	public void criarCartao(String titulo){
 		Cartao novoCartao = new Cartao(titulo); 
